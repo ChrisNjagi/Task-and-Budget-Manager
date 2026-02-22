@@ -85,8 +85,8 @@ def view_expenses():
     print("\n---Your Expenses---")
     
     for index, expense in enumerate(expenses, start=1):
-        print(f"{index}. {expense.name} | Amount: ${expense.amount} | Category: {expense.category}")
-        total += expense.amount
+        print(f"{index}. {expense['name']} | Amount: ${expense['amount']} | Category: {expense['category']}")
+        total += expense['amount']
         
     print(f"\nTotal Expenses: ${total}")
     
